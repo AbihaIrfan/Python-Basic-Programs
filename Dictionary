@@ -93,3 +93,35 @@ faculty={1:{"Name":"Sara","Address":"Karachi","Email":"sara@gmail.com","Designat
 
 for k,y in faculty.items():
     print(k,":",y)
+
+3
+def phone_directory(no):
+    phone_book={}
+    for i in range(no):
+        name=str(input("Enter name:")).title()
+        phone_num=int(input("Enter number:"))
+        print()
+        phone_book[name]=phone_num
+    return phone_book
+
+num=int(input("Enter how many numbers you want to enter:"))
+phone_book= phone_directory(num)
+print(phone_book)
+
+def delete(book,no_1,):
+    for i in range(no_1):
+        name_1=str(input("Enter name you want to delete:")).title()
+        if name_1 in book.keys():
+            book.pop(name_1)
+        else:
+            print("Number not in the phonebook")
+    return book
+
+num_1=int(input("How many numbers you want to delete:"))
+del_num= delete(phone_book,num_1)
+print("Members in Phone Directory after deleting are:")
+print(del_num)
+
+print("Total number of members in phone book are:",end="")
+total=len(del_num)
+print(total)
