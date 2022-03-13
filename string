@@ -105,3 +105,28 @@ else:
 s="1234"
 l=[1,2,3,4]
 print(s,l,sep=";")
+
+# Middle Element of word capital:
+from math import ceil
+def cap(word):
+    words = word.split()
+    data=""
+    for i in words:
+        length=len(i)
+        y=ceil(length/2)
+        data+=(i[0:y]+i[y].upper())+i[y+1:]+" "
+    return data
+phrase=input("Enter a phrase:")
+print("The middle element capital is:",cap(phrase))
+
+
+# Last Element of Word Capital:
+def cap(word):
+    words = word.split()
+    for i in words:
+        x = len(i)
+        y = x - 1
+        print(i[0:y]+i[y].upper(),end=" ")
+
+phrase=input("Enter a phrase:")
+cap(phrase)
