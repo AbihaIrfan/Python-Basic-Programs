@@ -120,6 +120,19 @@ phrase=input("Enter a phrase:")
 print("The middle element capital is:",cap(phrase))
 
 
+# Alternate letters capital
+phrase='my name is abiha'
+word=list(phrase)
+letter=""
+for i in range(len(word)):
+    if i%2==0:
+        letter+=word[i].upper()
+    else:
+        letter+=word[i].lower()
+
+print(letter)
+
+
 # Last Element of Word Capital:
 def cap(word):
     words = word.split()
