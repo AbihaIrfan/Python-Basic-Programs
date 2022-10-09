@@ -50,7 +50,7 @@ for k,y in d.items():
     print(k,":",y)
 
 
-#
+#3
 dict = {'Name' : 'Jibran', 'Age': 12, 'Class':'Sixth', 'DOB':'16 April2006'}
 print("dict['Name']: ", dict['Name'])
 print("dict['Age']: ", dict['Age'])
@@ -94,7 +94,6 @@ faculty={1:{"Name":"Sara","Address":"Karachi","Email":"sara@gmail.com","Designat
 for k,y in faculty.items():
     print(k,":",y)
 
-3
 def phone_directory(no):
     phone_book={}
     for i in range(no):
